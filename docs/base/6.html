@@ -1,0 +1,620 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>モデル（Modelの作成） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="7.html" />
+    
+    
+    <link rel="prev" href="5.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../PREPARATION.html">
+            
+                <a href="../../PREPARATION.html">
+            
+                    
+                    開発の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../SETUP.html">
+            
+                <a href="../../SETUP.html">
+            
+                    
+                    開発環境セットアップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    TODOアプリの仕様作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Laravelの基礎知識
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    ルーティングの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    コントローラー（Controller）の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    ビュー（View）の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    Bladeの書き方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    マイグレーション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    モデル（Modelの作成）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    シーディング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    ファクトリ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    テーブルデータの参照と表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    テーブル操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    TODOアプリの実装（基礎編）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../todo/1.html">
+            
+                <a href="../todo/1.html">
+            
+                    
+                    タスク一覧画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../todo/2.html">
+            
+                <a href="../todo/2.html">
+            
+                    
+                    タスク新規作成画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../todo/3.html">
+            
+                <a href="../todo/3.html">
+            
+                    
+                    タスク登録処理の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../todo/4.html">
+            
+                <a href="../todo/4.html">
+            
+                    
+                    バリデーションその１
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../todo/5.html">
+            
+                <a href="../todo/5.html">
+            
+                    
+                    バリデーションその２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../todo/6.html">
+            
+                <a href="../todo/6.html">
+            
+                    
+                    タスク編集画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../todo/7.html">
+            
+                <a href="../todo/7.html">
+            
+                    
+                    アクセサとミューテータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../todo/8.html">
+            
+                <a href="../todo/8.html">
+            
+                    
+                    タスク更新処理の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../todo/9.html">
+            
+                <a href="../todo/9.html">
+            
+                    
+                    タスク削除処理の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >モデル（Modelの作成）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x30E2;&#x30C7;&#x30EB;&#xFF08;Model&#xFF09;</p>
+<blockquote>
+<p><a href="https://readouble.com/laravel/5.8/ja/eloquent.html" target="_blank">https://readouble.com/laravel/5.8/ja/eloquent.html</a></p>
+</blockquote>
+<p>&#x3053;&#x3053;&#x304B;&#x3089;&#x306F;&#x5C11;&#x3057;&#x8907;&#x96D1;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;
+&#x305D;&#x306E;&#x305F;&#x3081;&#x3001;&#x898B;&#x51FA;&#x3057;&#x306E;&#x4E0B;&#x306B;&#x66F8;&#x3044;&#x3066;&#x3042;&#x308B;URL&#x3092;&#x305D;&#x308C;&#x305E;&#x308C;&#x53C2;&#x7167;&#x3057;&#x305F;&#x308A;&#x8CEA;&#x554F;&#x3057;&#x306A;&#x304C;&#x3089;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3092;&#x9032;&#x3081;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br></p>
+<p>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30FC;&#x3068;&#x306F;MVC&#x30E2;&#x30C7;&#x30EB;&#x306E;M&#x306B;&#x8A72;&#x5F53;&#x3057;&#x307E;&#x3059;&#x3002;
+MVC&#x306E;&#x6982;&#x5FF5;&#x4E0A;&#x3001;&#x30E2;&#x30C7;&#x30EB;&#x3068;&#x3044;&#x3046;&#x540D;&#x524D;&#x3067;&#x547C;&#x3073;&#x307E;&#x3059;&#x304C;Laravel&#x3067;&#x306F;<code>Eloquent</code>&#x3068;&#x3044;&#x3046;&#x4ED5;&#x7D44;&#x307F;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x30E2;&#x30C7;&#x30EB;&#x64CD;&#x4F5C;&#x3092;&#x5B9F;&#x73FE;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;<br>
+<br>
+&#x30E2;&#x30C7;&#x30EB;&#x306F;&#x3001;&#x7C21;&#x5358;&#x306B;&#x8A00;&#x3048;&#x3070;SQL&#x3068;&#x306E;&#x9023;&#x643A;&#x3092;&#x884C;&#x3046;&#x305F;&#x3081;&#x306E;&#x30D7;&#x30ED;&#x30B0;&#x30E9;&#x30E0;&#x3092;&#x6271;&#x3046;&#x5C64;&#x306B;&#x306A;&#x308A;&#x3001;
+&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x3068;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x3084;&#x308A;&#x53D6;&#x308A;&#x306F;&#x3059;&#x3079;&#x3066;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x901A;&#x3057;&#x3066;&#x884C;&#x308F;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x4F5C;&#x6210;">&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x4F5C;&#x6210;</h2>
+<p>&#x307E;&#x305A;&#x306F;&#x3001;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x898B;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+Laravel &#x30D7;&#x30ED;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x30D5;&#x30A9;&#x30EB;&#x30C0;&#x306E;&#x76F4;&#x4E0B;&#x3067;&#x4E0B;&#x8A18;&#x306E;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x3092;&#x30BF;&#x30FC;&#x30DF;&#x30CA;&#x30EB;&#xFF08;&#x3082;&#x3057;&#x304F;&#x306F;&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x30D7;&#x30ED;&#x30F3;&#x30D7;&#x30C8;&#xFF09;&#x3067;&#x5B9F;&#x884C;&#x3057;&#x3066;&#x3001;
+&#x6700;&#x521D;&#x306E;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<pre><code class="lang-bash">php artisan make:model Task
+</code></pre>
+<p>&#x30B3;&#x30DE;&#x30F3;&#x30C9;&#x306E;&#x5B9F;&#x884C;&#x304C;&#x6210;&#x529F;&#x3059;&#x308B;&#x3068;&#x3001;<code>app/Http/Task.php</code> &#x3068;&#x3044;&#x3046;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x308B;&#x306F;&#x305A;&#x3067;&#x3059;&#x3002;<br>
+Task.php &#x306E;&#x4E2D;&#x3092;&#x898B;&#x308B;&#x3068;&#x4E0B;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306B; Task&#x30AF;&#x30E9;&#x30B9;&#x3067;&#x5B9A;&#x7FA9;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x306E;&#x304C;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x308B;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-comment">//</span>
+}
+</code></pre>
+<p>Laravel&#x3067;&#x306F;&#x3001;&#x30E2;&#x30C7;&#x30EB;&#x540D;&#x306E;&#x5C0F;&#x6587;&#x5B57;&#x306B;&#x8907;&#x6570;&#x5F62;&#x306E;&#x300C;s&#x300D;&#x304C;&#x3064;&#x3044;&#x305F;&#x3082;&#x306E;&#x3092;&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x306E;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x3057;&#x3066;&#x95A2;&#x9023;&#x6027;&#x3092;&#x6301;&#x3064;&#x305F;&#x305B;&#x308B;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+Task&#x30E2;&#x30C7;&#x30EB;&#x306F;&#x3068;&#x304F;&#x306B;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x63A5;&#x7D9A;&#x51E6;&#x7406;&#x3084;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;&#x306E;&#x6307;&#x5B9A;&#x3092;&#x3057;&#x306A;&#x304F;&#x3066;&#x3082;tasks&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x305D;&#x306E;&#x307E;&#x307E;&#x6271;&#x3046;&#x3053;&#x3068;&#x304C;&#x51FA;&#x6765;&#x308B;&#x3068;&#x3044;&#x3046;&#x3053;&#x3068;&#x3067;&#x3059;&#x3002;<br>
+&#x307E;&#x305F;&#x3001;&#x30E2;&#x30C7;&#x30EB;&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x5316;&#x3057;&#x305F;&#x6642;&#x70B9;&#x3067;&#x65E2;&#x306B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;&#x306E;&#x5C0E;&#x7DDA;&#x304C;&#x3067;&#x304D;&#x3066;&#x3044;&#x308B;&#x72B6;&#x614B;&#x3092;&#x4F5C;&#x308B;&#x3053;&#x3068;&#x304C;&#x51FA;&#x6765;&#x308B;&#x305F;&#x3081;&#x3001;
+<code>&#x30E2;&#x30C7;&#x30EB; = &#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x305D;&#x306E;&#x3082;&#x306E;</code>&#x3068;&#x8003;&#x3048;&#x3066;&#x3082;&#x3089;&#x3063;&#x3066;&#x3082;&#x554F;&#x984C;&#x306F;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;<br></p>
+<h2 id="&#x30E2;&#x30C7;&#x30EB;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x4F5C;&#x6210;">&#x30E2;&#x30C7;&#x30EB;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306E;&#x4F5C;&#x6210;</h2>
+<blockquote>
+<p><a href="https://readouble.com/laravel/5.8/ja/queries.html" target="_blank">https://readouble.com/laravel/5.8/ja/queries.html</a></p>
+</blockquote>
+<p>&#x5148;&#x7A0B;&#x4F5C;&#x6210;&#x3057;&#x305F;Task&#x30AF;&#x30E9;&#x30B9;&#x306B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+&#x3053;&#x3053;&#x3067;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306F;&#x3001;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30FC;&#x304B;&#x3089;&#x547C;&#x3073;&#x51FA;&#x3057;&#x3066;&#x5229;&#x7528;&#x3059;&#x308B;&#x3053;&#x3068;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;<br></p>
+<p>&#x4E0B;&#x8A18;&#x3092;&#x53C2;&#x8003;&#x306B; get_task &#x3068;&#x3044;&#x3046;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Database</span>\<span class="hljs-title">Eloquent</span>\<span class="hljs-title">Model</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Task</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">get_task</span><span class="hljs-params">()</span> </span>{
+        $ret = $this-&gt;get();
+        <span class="hljs-keyword">return</span> $ret;
+    }
+}
+</code></pre>
+<p>Laravel&#x306E;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x3067;&#x306F;&#x3001;&#x4E0B;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x76F4;&#x63A5;&#x30BD;&#x30FC;&#x30B9;&#x30B3;&#x30FC;&#x30C9;&#x306B;&#x66F8;&#x304F;&#x5F62;&#x3067;&#x8AAC;&#x660E;&#x3057;&#x3066;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-php">$users = DB::table(<span class="hljs-string">&apos;users&apos;</span>)-&gt;get();
+</code></pre>
+<p>&#x3057;&#x304B;&#x3057;&#x66F8;&#x304D;&#x65B9;&#x306B;&#x9055;&#x3044;&#x306F;&#x3042;&#x308C;&#x3069;&#x3001;$this-&gt;get() &#x3068;&#x540C;&#x3058;&#x3053;&#x3068;&#x3092;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;<br>
+DB&#x3068;&#x3044;&#x3046;&#x30AF;&#x30E9;&#x30B9;&#x306F;&#x3001;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306E;&#x64CD;&#x4F5C;&#x3092;&#x62C5;&#x3063;&#x3066;&#x3044;&#x308B;&#x30AF;&#x30E9;&#x30B9;&#x3067;&#x3059;&#x3002;
+&#x3053;&#x306E;&#x30AF;&#x30E9;&#x30B9;&#x306E;table&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3059;&#x969B;&#x306B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x540D;&#x3092;&#x5F15;&#x6570;&#x3068;&#x3057;&#x3066;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x3001;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x305F;&#x72B6;&#x614B;&#x3067;&#x3092;&#x4F5C;&#x308B;&#x3053;&#x3068;&#x304C;&#x51FA;&#x6765;&#x308B;&#x306E;&#x3067;&#x3059;&#x304C;&#x3001;
+&#x5148;&#x306B;&#x3082;&#x66F8;&#x3044;&#x305F;&#x3088;&#x3046;&#x306B;&#x3001;&#x30AF;&#x30E9;&#x30B9;&#x540D;&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3067;&#x65E2;&#x306B;&#x5C0E;&#x7DDA;&#x3092;&#x4F5C;&#x3063;&#x3066;&#x3057;&#x307E;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x306E;&#x3067;&#x30E2;&#x30C7;&#x30EB;&#x3068;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x9593;&#x306F; $this &#x3068;&#x3057;&#x3066;&#x7701;&#x7565;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x51FA;&#x6765;&#x307E;&#x3059;&#x3002;<br>
+&#x305D;&#x306E;&#x305F;&#x3081;&#x3001;&#x5F53;&#x30C6;&#x30AD;&#x30B9;&#x30C8;&#x3067;&#x306F; $this &#x3068;&#x3057;&#x3066;&#x9032;&#x3081;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5.html" class="navigation navigation-prev " aria-label="Previous page: マイグレーション">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="7.html" class="navigation navigation-next " aria-label="Next page: シーディング">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"モデル（Modelの作成）","level":"1.5.6","depth":2,"next":{"title":"シーディング","level":"1.5.7","depth":2,"path":"docs/base/7.md","ref":"docs/base/7.md","articles":[]},"previous":{"title":"マイグレーション","level":"1.5.5","depth":2,"path":"docs/base/5.md","ref":"docs/base/5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/base/6.md","mtime":"2020-03-16T01:40:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T15:20:09.429Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

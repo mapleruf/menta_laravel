@@ -1,0 +1,608 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>テーブルデータの参照と表示 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10.html" />
+    
+    
+    <link rel="prev" href="8.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../PREPARATION.html">
+            
+                <a href="../../PREPARATION.html">
+            
+                    
+                    開発の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../SETUP.html">
+            
+                <a href="../../SETUP.html">
+            
+                    
+                    開発環境セットアップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    TODOアプリの仕様作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Laravelの基礎知識
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    ルーティングの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    コントローラー（Controller）の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    ビュー（View）の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    Bladeの書き方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    マイグレーション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    モデル（Modelの作成）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    シーディング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    ファクトリ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    テーブルデータの参照と表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    テーブル操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    TODOアプリの実装（基礎編）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../todo/1.html">
+            
+                <a href="../todo/1.html">
+            
+                    
+                    タスク一覧画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../todo/2.html">
+            
+                <a href="../todo/2.html">
+            
+                    
+                    タスク新規作成画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../todo/3.html">
+            
+                <a href="../todo/3.html">
+            
+                    
+                    タスク登録処理の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../todo/4.html">
+            
+                <a href="../todo/4.html">
+            
+                    
+                    バリデーションその１
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../todo/5.html">
+            
+                <a href="../todo/5.html">
+            
+                    
+                    バリデーションその２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../todo/6.html">
+            
+                <a href="../todo/6.html">
+            
+                    
+                    タスク編集画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../todo/7.html">
+            
+                <a href="../todo/7.html">
+            
+                    
+                    アクセサとミューテータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../todo/8.html">
+            
+                <a href="../todo/8.html">
+            
+                    
+                    タスク更新処理の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../todo/9.html">
+            
+                <a href="../todo/9.html">
+            
+                    
+                    タスク削除処理の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >テーブルデータの参照と表示</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53C2;&#x7167;&#x3068;&#x8868;&#x793A;">&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53C2;&#x7167;&#x3068;&#x8868;&#x793A;</h1>
+<p>&#x3088;&#x3046;&#x3084;&#x304F;&#x30C0;&#x30DF;&#x30FC;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x767B;&#x9332;&#x307E;&#x3067;&#x304C;&#x5B8C;&#x4E86;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;
+&#x305D;&#x308C;&#x3067;&#x306F;&#x65E9;&#x901F;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x304B;&#x3089;&#x5024;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x3066;&#x753B;&#x9762;&#x306B;&#x8868;&#x793A;&#x3055;&#x305B;&#x3066;&#x307F;&#x305F;&#x3044;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30FC;&#x306E;&#x7DE8;&#x96C6;">&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x30FC;&#x306E;&#x7DE8;&#x96C6;</h2>
+<p>&#x307E;&#x305A;&#x306F;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x304B;&#x3089;&#x3001;&#x30E2;&#x30C7;&#x30EB;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x307E;&#x3059;&#x3002;
+TodoController.php &#x306B; use &#x3068;&#x3057;&#x3066; App\Task &#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<br>
+&#x3053;&#x308C;&#x306F;&#x3001;tasks&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x5229;&#x7528;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B; Task.php &#x3068;&#x3044;&#x3046;&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x53C2;&#x7167;&#x3057;&#x307E;&#x3059;&#x3068;&#x3044;&#x3046;&#x5BA3;&#x8A00;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-php"><span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Request</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">App</span>\<span class="hljs-title">Task</span>; <span class="hljs-comment">// &lt;- &#x3053;&#x308C;&#x3092;&#x8FFD;&#x52A0;</span>
+</code></pre>
+<p>&#x6B21;&#x306B; index &#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4E0B;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306B;&#x66F8;&#x304D;&#x63DB;&#x3048;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<pre><code class="lang-php">    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span> <span class="hljs-params">()</span>
+    </span>{
+        $task = <span class="hljs-keyword">new</span> Task;
+        $list = $task-&gt;get_task();
+
+        <span class="hljs-keyword">return</span> view(<span class="hljs-string">&apos;index&apos;</span>, [
+            <span class="hljs-string">&apos;title&apos;</span> =&gt; <span class="hljs-string">&apos;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&apos;</span>,
+               <span class="hljs-string">&apos;list&apos;</span>  =&gt; $list
+        ]);
+    }
+</code></pre>
+<p>&#x3053;&#x3053;&#x3067;&#x306F;&#x3001;$task&#x3068;&#x3044;&#x3046;&#x5909;&#x6570;&#x306B;Task&#x30AF;&#x30E9;&#x30B9;&#x3092;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x5316;&#x3057;&#x3066;&#x4EE3;&#x5165;&#x3057;&#x3001;&#x30A4;&#x30F3;&#x30B9;&#x30BF;&#x30F3;&#x30B9;&#x5316;&#x3057;&#x305F;Task&#x30AF;&#x30E9;&#x30B9;&#x306E; get_task &#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x547C;&#x3073;&#x51FA;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+&#x307E;&#x305F;&#x3001;&#x305D;&#x306E;&#x7D50;&#x679C;&#x306F; $list &#x5909;&#x6570;&#x306B;&#x683C;&#x7D0D;&#x3055;&#x308C;&#x3001;list &#x3068;&#x3044;&#x3046;&#x5909;&#x6570;&#x540D;&#x3067;&#x30D3;&#x30E5;&#x30FC;&#x304B;&#x3089;&#x547C;&#x3073;&#x51FA;&#x3057;&#x3067;&#x304D;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;<br></p>
+<h2 id="&#x30D3;&#x30E5;&#x30FC;&#x306E;&#x7DE8;&#x96C6;">&#x30D3;&#x30E5;&#x30FC;&#x306E;&#x7DE8;&#x96C6;</h2>
+<p>&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x306E;&#x7DE8;&#x96C6;&#x304C;&#x7D42;&#x308F;&#x3063;&#x305F;&#x3089;&#x3001;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x304B;&#x3089;&#x6E21;&#x3055;&#x308C;&#x305F; list &#x3068;&#x3044;&#x3046;&#x5909;&#x6570;&#x3092;&#x30D3;&#x30E5;&#x30FC;&#x3067;&#x5229;&#x7528;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x7DE8;&#x96C6;&#x3057;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{ $title }}&#x30DA;&#x30FC;&#x30B8;<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        &#x3053;&#x308C;&#x306F;&#x6700;&#x521D;&#x306E;View&#x3067;&#x3059;&#x3002;<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        @foreach ($list as $item)
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{{ $item-&gt;detail }}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        @endforeach
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x3053;&#x3053;&#x307E;&#x3067;&#x306E;&#x7DE8;&#x96C6;&#x304C;&#x5B8C;&#x4E86;&#x3057;&#x305F;&#x3089;&#x3001;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x304B;&#x3089;<code>localhost:8000</code>&#x306B;&#x30A2;&#x30AF;&#x30BB;&#x30B9;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;
+&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306B;&#x767B;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;detail&#x30AB;&#x30E9;&#x30E0;&#x304C;&#x30EA;&#x30B9;&#x30C8;&#x3068;&#x3057;&#x3066;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x306E;&#x3092;&#x78BA;&#x8A8D;&#x3067;&#x304D;&#x305F;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x3002;<br>
+<br>
+Task &#x30E2;&#x30C7;&#x30EB;&#x306E; get_task &#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3067;&#x306F;&#x3001;&#x6700;&#x7D42;&#x7684;&#x306B; $this-&gt;get() &#x3068;&#x3044;&#x3046;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x304B;&#x3089;&#x5024;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;
+&#x3053;&#x306E; $this-&gt;get() &#x3067;&#x306F;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3068;&#x3057;&#x3066;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x60C5;&#x5831;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;<br>
+PHP&#x3067;&#x306F;&#x3001;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3084;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x3092;&#x53C2;&#x7167;&#x3059;&#x308B;&#x5834;&#x5408; -&gt;&#xFF08;&#x30A2;&#x30ED;&#x30FC;&#x6F14;&#x7B97;&#x5B50;&#xFF09;&#x3092;&#x4F7F;&#x3063;&#x3066;&#x53C2;&#x7167;&#x3059;&#x308B;&#x305F;&#x3081;&#x3001;
+&#x30D3;&#x30E5;&#x30FC;&#x3067;&#x3082;&#x30A2;&#x30ED;&#x30FC;&#x6F14;&#x7B97;&#x5B50;&#x306B;&#x3088;&#x3063;&#x3066; comment &#x306B;&#x683C;&#x7D0D;&#x3055;&#x308C;&#x305F;&#x5024;&#x3092;&#x53C2;&#x7167;&#xFF0F;&#x8868;&#x793A;&#x3092;&#x3057;&#x3066;&#x3044;&#x308B;&#x3068;&#x3044;&#x3046;&#x308F;&#x3051;&#x3067;&#x3059;&#x3002;<br></p>
+<p>&#x611F;&#x306E;&#x826F;&#x3044;&#x4EBA;&#x306F;&#x6C17;&#x3065;&#x3044;&#x305F;&#x304B;&#x3082;&#x3057;&#x308C;&#x307E;&#x305B;&#x3093;&#x3002;<br>
+Laravel&#x3067;&#x306F;&#x30E2;&#x30C7;&#x30EB;&#x3067;&#x53D6;&#x5F97;&#x3055;&#x308C;&#x305F;&#x30EC;&#x30FC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x60C5;&#x5831;&#x306F;&#x3001;&#x5B9F;&#x969B;&#x306E;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x30AB;&#x30E9;&#x30E0;&#x540D;&#x3068;&#x3057;&#x3066;&#x683C;&#x7D0D;&#x3055;&#x308C;&#x3066;&#x304D;&#x307E;&#x3059;&#x3002;
+&#x305D;&#x306E;&#x305F;&#x3081;&#x3001;&#x5229;&#x7528;&#x3082;&#x30AB;&#x30E9;&#x30E0;&#x540D;&#x3092;&#x6307;&#x5B9A;&#x3059;&#x308B;&#x3053;&#x3068;&#x3067;&#x53C2;&#x7167;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x53EF;&#x80FD;&#x3068;&#x306A;&#x3063;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x304A;&#x3055;&#x3089;&#x3044;">&#x304A;&#x3055;&#x3089;&#x3044;</h2>
+<p>&#x5148;&#x7A0B;&#x306E;&#x30D3;&#x30E5;&#x30FC;&#x3092;&#x7DE8;&#x96C6;&#x3057;&#x3066;&#x3001;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x306E;&#x524D;&#x306B; ID &#x3092;&#x51FA;&#x529B;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br>
+&#x307E;&#x305F;&#x3001;ID&#x3068;&#x30B3;&#x30E1;&#x30F3;&#x30C8;&#x306E;&#x9593;&#x306B;&#x306F;&#x308F;&#x304B;&#x308A;&#x3084;&#x3059;&#x304F;&#x30BF;&#x30D6;&#x6587;&#x5B57;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<br></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="8.html" class="navigation navigation-prev " aria-label="Previous page: ファクトリ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10.html" class="navigation navigation-next " aria-label="Next page: テーブル操作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"テーブルデータの参照と表示","level":"1.5.9","depth":2,"next":{"title":"テーブル操作","level":"1.5.10","depth":2,"path":"docs/base/10.md","ref":"docs/base/10.md","articles":[]},"previous":{"title":"ファクトリ","level":"1.5.8","depth":2,"path":"docs/base/8.md","ref":"docs/base/8.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/base/9.md","mtime":"2020-03-10T13:11:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T15:20:09.429Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,622 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>TODOアプリの仕様作成 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../../SETUP.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../PREPARATION.html">
+            
+                <a href="../../PREPARATION.html">
+            
+                    
+                    開発の準備
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../SETUP.html">
+            
+                <a href="../../SETUP.html">
+            
+                    
+                    開発環境セットアップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    TODOアプリの仕様作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Laravelの基礎知識
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    ルーティングの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    コントローラー（Controller）の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    ビュー（View）の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    Bladeの書き方
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    マイグレーション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    モデル（Modelの作成）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    シーディング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    ファクトリ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    テーブルデータの参照と表示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    テーブル操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    TODOアプリの実装（基礎編）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../todo/1.html">
+            
+                <a href="../todo/1.html">
+            
+                    
+                    タスク一覧画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../todo/2.html">
+            
+                <a href="../todo/2.html">
+            
+                    
+                    タスク新規作成画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../todo/3.html">
+            
+                <a href="../todo/3.html">
+            
+                    
+                    タスク登録処理の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../todo/4.html">
+            
+                <a href="../todo/4.html">
+            
+                    
+                    バリデーションその１
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../todo/5.html">
+            
+                <a href="../todo/5.html">
+            
+                    
+                    バリデーションその２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../todo/6.html">
+            
+                <a href="../todo/6.html">
+            
+                    
+                    タスク編集画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../todo/7.html">
+            
+                <a href="../todo/7.html">
+            
+                    
+                    アクセサとミューテータ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../todo/8.html">
+            
+                <a href="../todo/8.html">
+            
+                    
+                    タスク更新処理の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../todo/9.html">
+            
+                <a href="../todo/9.html">
+            
+                    
+                    タスク削除処理の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >TODOアプリの仕様作成</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x4ED5;&#x69D8;&#x4F5C;&#x6210;">&#x30A2;&#x30D7;&#x30EA;&#x306E;&#x4ED5;&#x69D8;&#x4F5C;&#x6210;</h1>
+<p>&#x65E9;&#x901F;TODO&#x30A2;&#x30D7;&#x30EA;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x304F;&#x306E;&#x3067;&#x3059;&#x304C;&#x3001;&#x307E;&#x305A;&#x306F;&#x4ED5;&#x69D8;&#x3092;&#x7C21;&#x5358;&#x306B;&#x6C7A;&#x3081;&#x3066;&#x3057;&#x307E;&#x3044;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<br>
+<br>
+&#x901A;&#x5E38;&#x3001;Web&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x5834;&#x5408;&#x306F;&#x3056;&#x3063;&#x304F;&#x308A;&#x3068;&#x4E0B;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306F;&#x624B;&#x9806;&#x3092;&#x7D4C;&#x3066;&#x7D30;&#x304B;&#x304F;&#x4ED5;&#x69D8;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x304D;&#x307E;&#x3059;&#x3002;<br></p>
+<ul>
+<li>&#x8981;&#x4EF6;&#x5B9A;&#x7FA9;</li>
+<li>&#x5916;&#x90E8;&#x8A2D;&#x8A08;</li>
+<li>&#x5185;&#x90E8;&#x8A2D;&#x8A08;</li>
+</ul>
+<p>&#x305F;&#x3060;&#x3057;&#x3001;&#x3088;&#x307B;&#x3069;&#x306E;&#x898F;&#x6A21;&#x3067;&#x3082;&#x306A;&#x3044;&#x9650;&#x308A;Web&#x30A2;&#x30D7;&#x30EA;&#x3067;&#x5185;&#x90E8;&#x8A2D;&#x8A08;&#x307E;&#x3067;&#x304D;&#x3061;&#x3093;&#x3068;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x306E;&#x306F;&#x7A00;&#x3060;&#x3068;&#x601D;&#x3044;&#x307E;&#x3059;&#x3002;
+&#x300C;&#x306A;&#x306B;&#x306E;&#x305F;&#x3081;&#x306B;&#x300D;&#x300C;&#x3069;&#x3093;&#x306A;&#x65B9;&#x6CD5;&#x3067;&#x300D;&#x300C;&#x4F55;&#x3092;&#x5B9F;&#x73FE;&#x3059;&#x308B;&#x306E;&#x304B;&#x300D;&#x3092;&#x660E;&#x78BA;&#x306B;&#x3057;&#x305F;&#x4E0A;&#x3067;&#x3001;&#x305D;&#x308C;&#x3092;&#x5B9F;&#x73FE;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;
+&#x5FC5;&#x8981;&#x306A;&#x6A5F;&#x80FD;&#x3092;&#x6C7A;&#x3081;&#x3066;&#x304B;&#x3089;&#x958B;&#x767A;&#x3092;&#x3059;&#x3059;&#x3081;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<br>
+<br>
+&#x4ECA;&#x56DE;&#x306F;&#x3056;&#x3063;&#x304F;&#x308A;&#x3068;&#x3001;&#x3069;&#x3093;&#x306A;&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x306E;&#x304B;&#x3060;&#x3051;&#x3092;&#x6C7A;&#x3081;&#x3066;&#x9032;&#x3081;&#x3066;&#x3044;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
+<h2 id="&#x958B;&#x767A;&#x3059;&#x308B;&#x30DA;&#x30FC;&#x30B8;&#xFF08;&#x6A5F;&#x80FD;&#xFF09;&#x306E;&#x4E00;&#x89A7;">&#x958B;&#x767A;&#x3059;&#x308B;&#x30DA;&#x30FC;&#x30B8;&#xFF08;&#x6A5F;&#x80FD;&#xFF09;&#x306E;&#x4E00;&#x89A7;</h2>
+<h3 id="&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x753B;&#x9762;">&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x753B;&#x9762;</h3>
+<p>&#x30E1;&#x30FC;&#x30EB;&#x30A2;&#x30C9;&#x30EC;&#x30B9;&#x3068;&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;&#x3067;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3059;&#x308B;&#x30DA;&#x30FC;&#x30B8;&#x3002;<br>
+&#x5165;&#x529B;&#x9805;&#x76EE;&#x306F;&#x4E0B;&#x8A18;&#x306E;&#x901A;&#x308A;&#x3067;&#x3059;&#x3002;</p>
+<ul>
+<li>&#x30E1;&#x30FC;&#x30EB;&#x30A2;&#x30C9;&#x30EC;&#x30B9;</li>
+<li>&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;</li>
+<li>&#x300C;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x300D;&#x30DC;&#x30BF;&#x30F3;</li>
+</ul>
+<h3 id="&#x65B0;&#x898F;&#x767B;&#x9332;&#x753B;&#x9762;">&#x65B0;&#x898F;&#x767B;&#x9332;&#x753B;&#x9762;</h3>
+<p>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306E;&#x65B0;&#x898F;&#x767B;&#x9332;&#x30DA;&#x30FC;&#x30B8;&#x3002;<br>
+&#x5165;&#x529B;&#x9805;&#x76EE;&#x306F;&#x4E0B;&#x8A18;&#x306E;&#x901A;&#x308A;&#x3067;&#x3059;&#x3002;</p>
+<ul>
+<li>&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x540D;</li>
+<li>&#x30E1;&#x30FC;&#x30EB;&#x30A2;&#x30C9;&#x30EC;&#x30B9;</li>
+<li>&#x30D1;&#x30B9;&#x30EF;&#x30FC;&#x30C9;</li>
+<li>&#x300C;&#x767B;&#x9332;&#x300D;&#x30DC;&#x30BF;&#x30F3;</li>
+</ul>
+<h3 id="&#x30BF;&#x30B9;&#x30AF;&#x4E00;&#x89A7;&#x753B;&#x9762;">&#x30BF;&#x30B9;&#x30AF;&#x4E00;&#x89A7;&#x753B;&#x9762;</h3>
+<p>&#x767B;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30BF;&#x30B9;&#x30AF;&#x306E;&#x4E00;&#x89A7;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x3002;<br>
+&#x3053;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x306F;&#x4E0B;&#x8A18;&#x306E;&#x6A5F;&#x80FD;&#x3082;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<ul>
+<li>&#x30BF;&#x30B9;&#x30AF;&#x524A;&#x9664;&#x6A5F;&#x80FD;</li>
+<li>&#x30AF;&#x30A4;&#x30C3;&#x30AF;&#x7DE8;&#x96C6;&#x6A5F;&#x80FD;&#xFF08;&#x30BF;&#x30B9;&#x30AF;&#x540D;&#x3001;&#x671F;&#x9650;&#x3001;&#x62C5;&#x5F53;&#x8005;&#xFF09;</li>
+<li>&#x30BF;&#x30B9;&#x30AF;&#x8FFD;&#x52A0;&#x30DA;&#x30FC;&#x30B8;&#x3078;&#x306E;&#x9077;&#x79FB;</li>
+<li>&#x30BF;&#x30B9;&#x30AF;&#x5909;&#x66F4;&#x30DA;&#x30FC;&#x30B8;&#x3078;&#x306E;&#x9077;&#x79FB;</li>
+</ul>
+<h3 id="&#x30BF;&#x30B9;&#x30AF;&#x8A73;&#x7D30;&#x753B;&#x9762;">&#x30BF;&#x30B9;&#x30AF;&#x8A73;&#x7D30;&#x753B;&#x9762;</h3>
+<p>&#x767B;&#x9332;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30BF;&#x30B9;&#x30AF;&#x306E;&#x8A73;&#x7D30;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x3002;<br>
+&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3068;&#x3057;&#x3066;&#x6E21;&#x3055;&#x308C;&#x305F;ID&#x3092;&#x3082;&#x3064;&#x30BF;&#x30B9;&#x30AF;&#x306E;&#x8A73;&#x7D30;&#x3092;&#x8868;&#x793A;&#x3057;&#x307E;&#x3059;&#x3002;<br>
+&#x8868;&#x793A;&#x9805;&#x76EE;&#x306F;&#x4E0B;&#x8A18;&#x306E;&#x901A;&#x308A;&#x3067;&#x3059;&#x3002;</p>
+<ul>
+<li>&#x30BF;&#x30B9;&#x30AF;&#x540D;</li>
+<li>&#x30BF;&#x30B9;&#x30AF;&#x8A73;&#x7D30;</li>
+<li>&#x671F;&#x9650;</li>
+<li>&#x62C5;&#x5F53;&#x8005;</li>
+</ul>
+<h3 id="&#x30BF;&#x30B9;&#x30AF;&#x65B0;&#x898F;&#x8FFD;&#x52A0;&#x753B;&#x9762;">&#x30BF;&#x30B9;&#x30AF;&#x65B0;&#x898F;&#x8FFD;&#x52A0;&#x753B;&#x9762;</h3>
+<p>&#x30BF;&#x30B9;&#x30AF;&#x306E;&#x767B;&#x9332;&#x3092;&#x884C;&#x3046;&#x305F;&#x3081;&#x306E;&#x30DA;&#x30FC;&#x30B8;&#x3002;<br>
+&#x5165;&#x529B;&#x9805;&#x76EE;&#x306F;&#x4E0B;&#x8A18;&#x306E;&#x901A;&#x308A;&#x3067;&#x3059;&#x3002;</p>
+<ul>
+<li>&#x30BF;&#x30B9;&#x30AF;&#x540D;</li>
+<li>&#x30BF;&#x30B9;&#x30AF;&#x8A73;&#x7D30;</li>
+<li>&#x671F;&#x9650;</li>
+<li>&#x62C5;&#x5F53;&#x8005;</li>
+<li>&#x300C;&#x767B;&#x9332;&#x300D;&#x30DC;&#x30BF;&#x30F3;</li>
+</ul>
+<h3 id="&#x30BF;&#x30B9;&#x30AF;&#x7DE8;&#x96C6;&#x753B;&#x9762;">&#x30BF;&#x30B9;&#x30AF;&#x7DE8;&#x96C6;&#x753B;&#x9762;</h3>
+<p>&#x767B;&#x9332;&#x3055;&#x308C;&#x305F;&#x30BF;&#x30B9;&#x30AF;&#x5185;&#x5BB9;&#x3092;&#x5909;&#x66F4;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x308B;&#x30DA;&#x30FC;&#x30B8;&#x3002;<br>
+&#x5165;&#x529B;&#x9805;&#x76EE;&#x306F;&#x4E0B;&#x8A18;&#x306E;&#x901A;&#x308A;&#x3067;&#x3059;&#x3002;</p>
+<ul>
+<li>&#x30BF;&#x30B9;&#x30AF;&#x540D;</li>
+<li>&#x30BF;&#x30B9;&#x30AF;&#x8A73;&#x7D30;</li>
+<li>&#x671F;&#x9650;</li>
+<li>&#x62C5;&#x5F53;&#x8005;</li>
+<li>&#x300C;&#x767B;&#x9332;&#x300D;&#x30DC;&#x30BF;&#x30F3;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../../SETUP.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 開発環境セットアップ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"TODOアプリの仕様作成","level":"1.4","depth":1,"next":{"title":"Laravelの基礎知識","level":"1.5","depth":1,"ref":"","articles":[{"title":"ルーティングの作成","level":"1.5.1","depth":2,"path":"docs/base/1.md","ref":"docs/base/1.md","articles":[]},{"title":"コントローラー（Controller）の作成","level":"1.5.2","depth":2,"path":"docs/base/2.md","ref":"docs/base/2.md","articles":[]},{"title":"ビュー（View）の作成","level":"1.5.3","depth":2,"path":"docs/base/3.md","ref":"docs/base/3.md","articles":[]},{"title":"Bladeの書き方","level":"1.5.4","depth":2,"path":"docs/base/4.md","ref":"docs/base/4.md","articles":[]},{"title":"マイグレーション","level":"1.5.5","depth":2,"path":"docs/base/5.md","ref":"docs/base/5.md","articles":[]},{"title":"モデル（Modelの作成）","level":"1.5.6","depth":2,"path":"docs/base/6.md","ref":"docs/base/6.md","articles":[]},{"title":"シーディング","level":"1.5.7","depth":2,"path":"docs/base/7.md","ref":"docs/base/7.md","articles":[]},{"title":"ファクトリ","level":"1.5.8","depth":2,"path":"docs/base/8.md","ref":"docs/base/8.md","articles":[]},{"title":"テーブルデータの参照と表示","level":"1.5.9","depth":2,"path":"docs/base/9.md","ref":"docs/base/9.md","articles":[]},{"title":"テーブル操作","level":"1.5.10","depth":2,"path":"docs/base/10.md","ref":"docs/base/10.md","articles":[]}]},"previous":{"title":"開発環境セットアップ","level":"1.3","depth":1,"path":"SETUP.md","ref":"SETUP.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/base/0.md","mtime":"2020-03-16T15:12:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T15:20:09.429Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
