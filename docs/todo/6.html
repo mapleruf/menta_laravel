@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="ja" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>タスク編集画面の作成 · GitBook</title>
+        <title>タスク編集画面の作成 · Laravel学習テキスト</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -71,7 +71,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="検索すると入力" />
 </div>
 
             
@@ -421,6 +421,77 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    タスク詳細画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    TODOアプリの実装（実践編）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../todo2/1.html">
+            
+                <a href="../todo2/1.html">
+            
+                    
+                    認証機能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../todo2/2.html">
+            
+                <a href="../todo2/2.html">
+            
+                    
+                    認証機能その２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../todo2/3.html">
+            
+                <a href="../todo2/3.html">
+            
+                    
+                    ユーザー依存のタスクを作成する
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -433,7 +504,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            GitBookで公開 
         </a>
     </li>
 </ul>
@@ -509,7 +580,7 @@ Route::get(<span class="hljs-string">&apos;/edit/{id}&apos;</span>, <span class=
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;X-UA-Compatible&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;IE=edge&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x30BF;&#x30B9;&#x30AF;&#x4E00;&#x89A7;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x30BF;&#x30B9;&#x30AF;&#x7DE8;&#x96C6;<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
@@ -542,7 +613,7 @@ Route::get(<span class="hljs-string">&apos;/edit/{id}&apos;</span>, <span class=
 <span class="hljs-comment"># &#x30C7;&#x30FC;&#x30BF;&#x30D9;&#x30FC;&#x30B9;&#x306E;&#x5024;</span>
 2020-03-16 00:00:00
 </code></pre>
-<p>&#x30DF;&#x30E5;&#x30FC;&#x30C6;&#x30BF;&#x3068;&#x3044;&#x3046;&#x4ED5;&#x7D44;&#x307F;&#x3092;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x3067;&#x3053;&#x308C;&#x3092;&#x89E3;&#x6C7A;&#x3059;&#x308B;&#x4E8B;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x30A2;&#x30AF;&#x30BB;&#x30B5;&#x3068;&#x3044;&#x3046;&#x4ED5;&#x7D44;&#x307F;&#x3092;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x3067;&#x3053;&#x308C;&#x3092;&#x89E3;&#x6C7A;&#x3059;&#x308B;&#x4E8B;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
 
                                 
                                 </section>
@@ -586,7 +657,7 @@ Route::get(<span class="hljs-string">&apos;/edit/{id}&apos;</span>, <span class=
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"タスク編集画面の作成","level":"1.6.6","depth":2,"next":{"title":"アクセサとミューテータ","level":"1.6.7","depth":2,"path":"docs/todo/7.md","ref":"docs/todo/7.md","articles":[]},"previous":{"title":"バリデーションその２","level":"1.6.5","depth":2,"path":"docs/todo/5.md","ref":"docs/todo/5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/todo/6.md","mtime":"2020-03-16T14:20:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T15:52:33.134Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"タスク編集画面の作成","level":"1.6.6","depth":2,"next":{"title":"アクセサとミューテータ","level":"1.6.7","depth":2,"path":"docs/todo/7.md","ref":"docs/todo/7.md","articles":[]},"previous":{"title":"バリデーションその２","level":"1.6.5","depth":2,"path":"docs/todo/5.md","ref":"docs/todo/5.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mermaid","-sharing","hide-published-with","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mermaid":{},"hide-published-with":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Laravel学習テキスト","language":"ja","gitbook":">= 3.0.0","description":""},"file":{"path":"docs/todo/6.md","mtime":"2020-03-17T04:51:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-17T05:06:55.005Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -594,6 +665,10 @@ Route::get(<span class="hljs-string">&apos;/edit/{id}&apos;</span>, <span class=
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
@@ -613,10 +688,6 @@ Route::get(<span class="hljs-string">&apos;/edit/{id}&apos;</span>, <span class=
     
         
         <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         

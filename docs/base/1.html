@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="ja" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>ルーティングの作成 · GitBook</title>
+        <title>ルーティングの作成 · Laravel学習テキスト</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,7 +69,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
+    <input type="text" placeholder="検索すると入力" />
 </div>
 
             
@@ -419,6 +419,77 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6.10" data-path="../todo/10.html">
+            
+                <a href="../todo/10.html">
+            
+                    
+                    タスク詳細画面の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    TODOアプリの実装（実践編）
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../todo2/1.html">
+            
+                <a href="../todo2/1.html">
+            
+                    
+                    認証機能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../todo2/2.html">
+            
+                <a href="../todo2/2.html">
+            
+                    
+                    認証機能その２
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../todo2/3.html">
+            
+                <a href="../todo2/3.html">
+            
+                    
+                    ユーザー依存のタスクを作成する
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -431,7 +502,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            GitBookで公開 
         </a>
     </li>
 </ul>
@@ -475,7 +546,7 @@
 </blockquote>
 <p>&#x305D;&#x308C;&#x3067;&#x306F;&#x3001;&#x307E;&#x305A;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x307F;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<br>
 Web&#x30B5;&#x30A4;&#x30C8;&#x306E;&#x30EB;&#x30FC;&#x30C6;&#x30A3;&#x30F3;&#x30B0;&#x3092;&#x884C;&#x3046;&#x306B;&#x306F;&#x3001;&#x4E0B;&#x8A18;&#x306E;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x7DE8;&#x96C6;&#x3057;&#x307E;&#x3059;&#x3002;<br></p>
-<pre><code class="lang-bash">WebApp/routes/web.php
+<pre><code class="lang-bash">routes/web.php
 </code></pre>
 <p>&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x958B;&#x304F;&#x3068;&#x3001;&#x4E0B;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306A;&#x30B5;&#x30F3;&#x30D7;&#x30EB;&#x304C;&#x65E2;&#x306B;&#x8A18;&#x8FF0;&#x3057;&#x3066;&#x3042;&#x308B;&#x306F;&#x305A;&#x3067;&#x3059;&#x3002;<br></p>
 <pre><code class="lang-php">Route::get(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
@@ -642,7 +713,7 @@ Route::post(<span class="hljs-string">&apos;/delete&apos;</span>, <span class="h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ルーティングの作成","level":"1.5.1","depth":2,"next":{"title":"コントローラー（Controller）の作成","level":"1.5.2","depth":2,"path":"docs/base/2.md","ref":"docs/base/2.md","articles":[]},"previous":{"title":"Laravelの基礎知識","level":"1.5","depth":1,"ref":"","articles":[{"title":"ルーティングの作成","level":"1.5.1","depth":2,"path":"docs/base/1.md","ref":"docs/base/1.md","articles":[]},{"title":"コントローラー（Controller）の作成","level":"1.5.2","depth":2,"path":"docs/base/2.md","ref":"docs/base/2.md","articles":[]},{"title":"ビュー（View）の作成","level":"1.5.3","depth":2,"path":"docs/base/3.md","ref":"docs/base/3.md","articles":[]},{"title":"Bladeの書き方","level":"1.5.4","depth":2,"path":"docs/base/4.md","ref":"docs/base/4.md","articles":[]},{"title":"マイグレーション","level":"1.5.5","depth":2,"path":"docs/base/5.md","ref":"docs/base/5.md","articles":[]},{"title":"モデル（Modelの作成）","level":"1.5.6","depth":2,"path":"docs/base/6.md","ref":"docs/base/6.md","articles":[]},{"title":"シーディング","level":"1.5.7","depth":2,"path":"docs/base/7.md","ref":"docs/base/7.md","articles":[]},{"title":"ファクトリ","level":"1.5.8","depth":2,"path":"docs/base/8.md","ref":"docs/base/8.md","articles":[]},{"title":"テーブルデータの参照と表示","level":"1.5.9","depth":2,"path":"docs/base/9.md","ref":"docs/base/9.md","articles":[]},{"title":"テーブル操作","level":"1.5.10","depth":2,"path":"docs/base/10.md","ref":"docs/base/10.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/base/1.md","mtime":"2020-03-16T15:17:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-16T15:52:33.134Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ルーティングの作成","level":"1.5.1","depth":2,"next":{"title":"コントローラー（Controller）の作成","level":"1.5.2","depth":2,"path":"docs/base/2.md","ref":"docs/base/2.md","articles":[]},"previous":{"title":"Laravelの基礎知識","level":"1.5","depth":1,"ref":"","articles":[{"title":"ルーティングの作成","level":"1.5.1","depth":2,"path":"docs/base/1.md","ref":"docs/base/1.md","articles":[]},{"title":"コントローラー（Controller）の作成","level":"1.5.2","depth":2,"path":"docs/base/2.md","ref":"docs/base/2.md","articles":[]},{"title":"ビュー（View）の作成","level":"1.5.3","depth":2,"path":"docs/base/3.md","ref":"docs/base/3.md","articles":[]},{"title":"Bladeの書き方","level":"1.5.4","depth":2,"path":"docs/base/4.md","ref":"docs/base/4.md","articles":[]},{"title":"マイグレーション","level":"1.5.5","depth":2,"path":"docs/base/5.md","ref":"docs/base/5.md","articles":[]},{"title":"モデル（Modelの作成）","level":"1.5.6","depth":2,"path":"docs/base/6.md","ref":"docs/base/6.md","articles":[]},{"title":"シーディング","level":"1.5.7","depth":2,"path":"docs/base/7.md","ref":"docs/base/7.md","articles":[]},{"title":"ファクトリ","level":"1.5.8","depth":2,"path":"docs/base/8.md","ref":"docs/base/8.md","articles":[]},{"title":"テーブルデータの参照と表示","level":"1.5.9","depth":2,"path":"docs/base/9.md","ref":"docs/base/9.md","articles":[]},{"title":"テーブル操作","level":"1.5.10","depth":2,"path":"docs/base/10.md","ref":"docs/base/10.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["mermaid","-sharing","hide-published-with","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mermaid":{},"hide-published-with":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Laravel学習テキスト","language":"ja","gitbook":">= 3.0.0","description":""},"file":{"path":"docs/base/1.md","mtime":"2020-03-17T05:10:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-17T05:06:55.005Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -650,6 +721,10 @@ Route::post(<span class="hljs-string">&apos;/delete&apos;</span>, <span class="h
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
     
         
         <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
@@ -669,10 +744,6 @@ Route::post(<span class="hljs-string">&apos;/delete&apos;</span>, <span class="h
     
         
         <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         
