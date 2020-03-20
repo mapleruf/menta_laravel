@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="5.html" />
+    
     
     <link rel="prev" href="3.html" />
     
@@ -503,6 +505,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.7.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    ビュー（View）レイアウト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    少し進んだBladeの書き方
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -613,7 +641,6 @@ task&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x306F;&#x7D99;&#x627F;&#x5143;&#x306B;&#x3
 </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span> <span class="hljs-params">()</span>
     </span>{
-        $user = <span class="hljs-keyword">new</span> User;
         <span class="hljs-comment">// &#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306B;&#x95A2;&#x9023;&#x3059;&#x308B;&#x30BF;&#x30B9;&#x30AF;&#x60C5;&#x5831;&#xFF08;&#x30E2;&#x30C7;&#x30EB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#xFF09;&#x3092;&#xFF11;&#x4EF6;&#x53D6;&#x5F97;</span>
         $task = User::first()-&gt;task;
 
@@ -668,9 +695,8 @@ Task&#x30E2;&#x30C7;&#x30EB;&#x306B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x8
 </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span> <span class="hljs-params">()</span>
     </span>{
-        $task = <span class="hljs-keyword">new</span> Task;
         <span class="hljs-comment">// &#xFF11;&#x8ED2;&#x306E;&#x30BF;&#x30B9;&#x30AF;&#x306B;&#x95A2;&#x9023;&#x3059;&#x308B;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x60C5;&#x5831;&#x3092;&#x53D6;&#x5F97;</span>
-        $user = $task-&gt;first()-&gt;user;
+        $user = Task::first()-&gt;user;
 
     ...&#xFF08;&#x7701;&#x7565;&#xFF09;...
 </code></pre>
@@ -717,7 +743,6 @@ Task&#x30E2;&#x30C7;&#x30EB;&#x306B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x8
 </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span> <span class="hljs-params">()</span>
     </span>{
-        $user = <span class="hljs-keyword">new</span> User;
         <span class="hljs-comment">// &#xFF11;&#x8ED2;&#x306E;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306B;&#x95A2;&#x9023;&#x3059;&#x308B;&#x30BF;&#x30B9;&#x30AF;&#x60C5;&#x5831;&#x3092;&#x3059;&#x3079;&#x3066;&#x53D6;&#x5F97;</span>
         $tasks = User::first()-&gt;tasks;
 
@@ -727,7 +752,7 @@ Task&#x30E2;&#x30C7;&#x30EB;&#x306B;&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x8
 </code></pre>
 <blockquote>
 <h5 id="&#x8AB2;&#x984C;">&#x8AB2;&#x984C;</h5>
-<p>&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3057;&#x3066;&#x3044;&#x308B;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306B;&#xFF11;&#x5BFE;&#xFF11;&#x3067;&#x7D10;&#x3065;&#x304F;&#x30BF;&#x30B9;&#x30AF;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x3066;&#x30BF;&#x30B9;&#x30AF;&#x4E00;&#x89A7;&#x306B;&#x8868;&#x793A;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;<br>
+<p>&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x3057;&#x3066;&#x3044;&#x308B;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306B;&#xFF11;&#x5BFE;&#x591A;&#x3067;&#x7D10;&#x3065;&#x304F;&#x30BF;&#x30B9;&#x30AF;&#x3092;&#x53D6;&#x5F97;&#x3057;&#x3066;&#x30BF;&#x30B9;&#x30AF;&#x4E00;&#x89A7;&#x306B;&#x8868;&#x793A;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;<br>
 TodoController&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
 </blockquote>
 <h4 id="&#x25B6;&#x9006;&#x95A2;&#x4FC2;&#x306E;&#x5B9A;&#x7FA9;">&#x25B6;&#x9006;&#x95A2;&#x4FC2;&#x306E;&#x5B9A;&#x7FA9;</h4>
@@ -772,9 +797,8 @@ TodoController&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#
 </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span> <span class="hljs-params">()</span>
     </span>{
-        $task = <span class="hljs-keyword">new</span> Task;
         <span class="hljs-comment">// &#xFF11;&#x4EF6;&#x306E;&#x30BF;&#x30B9;&#x30AF;&#x306B;&#x95A2;&#x9023;&#x3059;&#x308B;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x60C5;&#x5831;&#x3092;&#x53D6;&#x5F97;</span>
-        $user = $task-&gt;first()-&gt;user;
+        $user = Task::first()-&gt;user;
 
     ...&#xFF08;&#x7701;&#x7565;&#xFF09;...
 </code></pre>
@@ -797,9 +821,8 @@ TodoController&#x3092;&#x4FEE;&#x6B63;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#
 &#x30E2;&#x30C7;&#x30EB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x6BCE;&#x306B;&#x7BA1;&#x7406;&#x3055;&#x308C;&#x3001;&#x305D;&#x306E;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306B;&#x95A2;&#x9023;&#x3057;&#x3066;&#x3044;&#x308B;&#x60C5;&#x5831;&#x3092;&#x53D6;&#x5F97;&#x3067;&#x304D;&#x3066;&#x3044;&#x308B;&#x3068;&#x3044;&#x3046;&#x3053;&#x3068;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
 <pre><code class="lang-php">    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span> <span class="hljs-params">()</span>
     </span>{
-        $task = <span class="hljs-keyword">new</span> Task;
         <span class="hljs-comment">// id 53 &#x306E;&#x30BF;&#x30B9;&#x30AF;&#x306B;&#x95A2;&#x9023;&#x3059;&#x308B;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x60C5;&#x5831;&#x3092;&#x53D6;&#x5F97;</span>
-        $user = $task-&gt;find(<span class="hljs-number">53</span>)-&gt;user;
+        $user = Task::find(<span class="hljs-number">53</span>)-&gt;user;
 
     ...&#xFF08;&#x7701;&#x7565;&#xFF09;...
 </code></pre>
@@ -829,7 +852,8 @@ role<em>user&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306F;users&#x30C6;&#x30FC;&#x30D6
 <p>roles&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3068;role_user&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3059;&#x308B;&#x30DE;&#x30A4;&#x30B0;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x4F5C;&#x3063;&#x3066;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br>
 roles&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3067;&#x306F;&#x3001;&#x6A29;&#x9650;ID&#x3092;&#x4FDD;&#x5B58;&#x3059;&#x308B;id&#x30AB;&#x30E9;&#x30E0;&#xFF08;&#x6570;&#x5024;&#xFF1A;AI&#xFF09;&#x3068;&#x6A29;&#x9650;&#x540D;&#x3082;&#x4FDD;&#x5B58;&#x3059;&#x308B;name&#xFF08;&#x6587;&#x5B57;&#x5217;&#xFF09;&#x3092;&#x30AB;&#x30E9;&#x30E0;&#x3068;&#x3057;&#x3066;&#x6301;&#x3064;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br>
 &#x307E;&#x305F;&#x3001;role_user&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x306F;&#x4F5C;&#x6210;&#x8005;&#x306E;&#x30E6;&#x30FC;&#x30B6;&#x30FC;ID&#x3092;&#x4FDD;&#x5B58;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E; creator_id &#x3068;&#x3044;&#x3046;&#x30AB;&#x30E9;&#x30E0;&#x3082;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<br>
-&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x8FFD;&#x52A0;&#x304C;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;roles&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x306F;&#x300C;&#x7BA1;&#x7406;&#x8005;&#x300D;&#x300C;&#x62C5;&#x5F53;&#x8005;&#x300D;&#x306E;&#xFF12;&#x3064;&#x306E;&#x6A29;&#x9650;&#x3092;&#x767B;&#x9332;&#x3057;&#x3066;&#x304A;&#x3044;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x8FFD;&#x52A0;&#x304C;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;roles&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306B;&#x306F;&#x300C;&#x7BA1;&#x7406;&#x8005;&#x300D;&#x300C;&#x62C5;&#x5F53;&#x8005;&#x300D;&#x306E;&#xFF12;&#x3064;&#x306E;&#x6A29;&#x9650;&#x3092;&#x767B;&#x9332;&#x3057;&#x3066;&#x304A;&#x3044;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br>
+&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x4F5C;&#x6210;&#x3068;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x4F5C;&#x6210;&#x304C;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;&#x6700;&#x5F8C;&#x306B;Role&#x30E2;&#x30C7;&#x30EB;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;</p>
 </blockquote>
 <p><br></p>
 <blockquote>
@@ -848,12 +872,43 @@ roles&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3067;&#x306F;&#x3001;&#x6A29;&#x9650;ID&
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Model</span>
 </span>{
+
+    ...&#xFF08;&#x7701;&#x7565;&#xFF09;...
+
     <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">roles</span><span class="hljs-params">()</span>
     </span>{
         <span class="hljs-keyword">return</span> $this-&gt;belongsToMany(<span class="hljs-string">&apos;App\Role&apos;</span>);
     }
 }
 </code></pre>
+<p>&#x5B9A;&#x7FA9;&#x304C;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;&#x5B9F;&#x969B;&#x306B;&#x30B3;&#x30F3;&#x30C8;&#x30ED;&#x30FC;&#x30E9;&#x3067;roles&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x898B;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<br>
+TodoController&#x306E;index&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3092;&#x4E0B;&#x8A18;&#x306E;&#x3088;&#x3046;&#x306B;&#x3057;&#x3066;&#x3001;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x5185;&#x5BB9;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<pre><code class="lang-php">    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">index</span> <span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-comment">// &#x8FFD;&#x52A0;&#xFF1A;&#x30ED;&#x30B0;&#x30A4;&#x30F3;&#x30E6;&#x30FC;&#x30B6;&#x30FC;&#x306B;&#x7D10;&#x4ED8;&#x3044;&#x3066;&#x3044;&#x308B;&#x6A29;&#x9650;&#x540D;&#x3092;&#x8868;&#x793A;</span>
+        $roles = User::find(<span class="hljs-number">1</span>)-&gt;roles;
+        <span class="hljs-keyword">foreach</span> ($roles <span class="hljs-keyword">as</span> $role) {
+            <span class="hljs-keyword">echo</span> $role-&gt;name.<span class="hljs-string">&apos;&lt;br&gt;&apos;</span>;
+        }
+        <span class="hljs-keyword">die</span>;
+
+        $task = <span class="hljs-keyword">new</span> Task;
+        $list = $task-&gt;get_task(Auth::id());
+
+        <span class="hljs-keyword">return</span> view(<span class="hljs-string">&apos;index&apos;</span>, [
+               <span class="hljs-string">&apos;list&apos;</span>  =&gt; $list
+        ]);
+    }
+</code></pre>
+<p>&#x8868;&#x793A;&#x306E;&#x78BA;&#x8A8D;&#x304C;&#x3067;&#x304D;&#x305F;&#x3089;&#x3001;&#x8FFD;&#x52A0;&#x3057;&#x305F;&#x884C;&#x306F;&#x524A;&#x9664;&#x3057;&#x3066;&#x304A;&#x304D;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<br>
+<br>
+&#x3053;&#x308C;&#x4EE5;&#x5916;&#x306B;&#x3082;&#x3001;&#x591A;&#x5BFE;&#x591A;&#x306E;&#x4E2D;&#x9593;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x53C2;&#x7167;&#x3059;&#x308B;Povit&#x3084;&#x3001;&#x4E2D;&#x9593;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3092;&#x610F;&#x56F3;&#x7684;&#x306B;&#x6307;&#x5B9A;&#x3059;&#x308B;hasOneThrough&#x3001;
+&#x30DD;&#x30EA;&#x30E2;&#x30FC;&#x30D5;&#x30A3;&#x30C3;&#x30AF;&#x30EA;&#x30EC;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x3068;&#x3044;&#x3063;&#x305F;&#x65B9;&#x6CD5;&#x304C;&#x5B58;&#x5728;&#x3057;&#x307E;&#x3059;&#x3002;<br>
+Laravel&#x306E;&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;&#x306B;&#x8A73;&#x3057;&#x304F;&#x66F8;&#x304B;&#x308C;&#x3066;&#x3044;&#x308B;&#x306E;&#x3067;&#x3001;&#x6C17;&#x306B;&#x306A;&#x308B;&#x5834;&#x5408;&#x306F;&#x78BA;&#x8A8D;&#x3057;&#x3066;&#x307F;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;<br>
+&#x30DE;&#x30CB;&#x30E5;&#x30A2;&#x30EB;&#x3092;&#x8AAD;&#x3093;&#x3067;&#x3082;&#x7406;&#x89E3;&#x3067;&#x304D;&#x306A;&#x3044;&#x5834;&#x5408;&#x306F;&#x3001;&#x6709;&#x8B58;&#x8005;&#x306B;&#x8CEA;&#x554F;&#x3059;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;&#x3002;<br></p>
+<blockquote>
+<p><a href="https://readouble.com/laravel/5.8/ja/eloquent-relationships.html" target="_blank">https://readouble.com/laravel/5.8/ja/eloquent-relationships.html</a></p>
+</blockquote>
 
                                 
                                 </section>
@@ -881,10 +936,14 @@ roles&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3067;&#x306F;&#x3001;&#x6A29;&#x9650;ID&
 
             
                 
-                <a href="3.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: タスクをユーザーに依存させる">
+                <a href="3.html" class="navigation navigation-prev " aria-label="Previous page: タスクをユーザーに依存させる">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="5.html" class="navigation navigation-next " aria-label="Next page: ビュー（View）レイアウト">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -893,7 +952,7 @@ roles&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3067;&#x306F;&#x3001;&#x6A29;&#x9650;ID&
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"テーブルのリレーション","level":"1.7.4","depth":2,"previous":{"title":"タスクをユーザーに依存させる","level":"1.7.3","depth":2,"path":"docs/todo2/3.md","ref":"docs/todo2/3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mermaid","-sharing","hide-published-with","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mermaid":{},"hide-published-with":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Laravel学習テキスト","language":"ja","gitbook":">= 3.0.0","description":""},"file":{"path":"docs/todo2/4.md","mtime":"2020-03-19T15:12:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-19T13:26:46.439Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"テーブルのリレーション","level":"1.7.4","depth":2,"next":{"title":"ビュー（View）レイアウト","level":"1.7.5","depth":2,"path":"docs/todo2/5.md","ref":"docs/todo2/5.md","articles":[]},"previous":{"title":"タスクをユーザーに依存させる","level":"1.7.3","depth":2,"path":"docs/todo2/3.md","ref":"docs/todo2/3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mermaid","-sharing","hide-published-with","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mermaid":{},"hide-published-with":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Laravel学習テキスト","language":"ja","gitbook":">= 3.0.0","description":""},"file":{"path":"docs/todo2/4.md","mtime":"2020-03-20T12:49:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-19T13:26:46.439Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
